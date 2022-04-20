@@ -7,6 +7,7 @@ Tutorial on how to dockerize kafka. From [better data science](https://www.youtu
 - The first `consumer.py` is the Kafka consumer.
 - The sencond `data_generator.py` is the dummy data generator to producer data to the topic `messages` in Kafka.
 - The third `producer.py` is the Kafka producer, it uses the `data_generator.py`.
+### To run
 - Run the `consumer.py` and the `producer.py` in seperate terminals to see the producer and the consumer outputs.
 
 ## Kafka Topics
