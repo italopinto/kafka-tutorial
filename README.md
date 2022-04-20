@@ -9,4 +9,7 @@ Tutorial on how to dockerize kafka. From [better data science](https://www.youtu
 - The third `producer.py` is the Kafka producer, it uses the `data_generator.py`.
 - Run the `consumer.py` and the `producer.py` in seperate terminals to see the producer and the consumer outputs.
 
-### Any hassle make sure to watch the YouTube series from [better data science](https://www.youtube.com/watch?v=4xFZ_iTZLTs&list=PLQ5j-FTc2VhAY_PBg7FVkZsal50MCgp7Y) 
+## Kafka Topics
+- The docker-compose come with the environment variable: `KAFKA_CREATE_TOPICS` it create a topic automaticaly within the creation of the container. If you desire to use another topic just change the name, like `KAFKA_CREATE_TOPICS: "messages:1:1"` from **messages** to **events** `KAFKA_CREATE_TOPICS: "events:1:1"`. See [Automatically create topics](https://hub.docker.com/r/wurstmeister/kafka), from the Kafka image on Docker Hub.
+
+### Any hassle make sure to watch the YouTube series from [better data science](https://www.youtube.com/watch?v=4xFZ_iTZLTs&list=PLQ5j-FTc2VhAY_PBg7FVkZsal50MCgp7Y). 
